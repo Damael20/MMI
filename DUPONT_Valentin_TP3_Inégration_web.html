@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .quadrilage{
+            display: grid;
+            grid-template-columns: repeat(3, 28px) 5px repeat(3, 28px) 5px repeat(3, 28px);
+            grid-template-rows: repeat(3, 28px) 5px repeat(3, 28px) 5px repeat(3, 28px);
+            grid-gap : 4px;   
+        }
+        .quadrilage>input{
+            border: none;
+            border-radius: 3px;
+            text-align: center;
+            padding: 0;
+        }
+
+        .traits{
+            background-color: red;
+            
+        }
+
+        .traits{
+				background: coral;
+			}
+			.trait1{
+				grid-row: 1 / 12;
+				grid-column: 4 / 5;
+			}
+			.trait2{
+				grid-row: 1 / 12;
+				grid-column: 8 / 9;
+			}
+			.trait3{
+				grid-row: 4 / 5;
+				grid-column: 1 / 12;
+			}
+			.trait4{
+				grid-row: 8 / 9;
+				grid-column: 1 / 12;
+			}
+       
+
+        
+        
+        
+
+        
+            
+    </style>
+</head>
+<body>
+    <div class="quadrilage">
+       
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+       <input>
+
+       <div class="traits trait1"></div>
+       <div class="traits trait2"></div>
+       <div class="traits trait3"></div>
+       <div class="traits trait4"></div>
+
+
+
+
+    </div>
+    <script>
+       let toutLesInput= document.querySelectorAll('input');
+       let tableauDeValeur= [0, 9, 5, 3, 0, 8, 7, 0, 1, 8, 2, 1, 0, 7, 0, 0, 6, 0, 6, 7, 0, 4, 0, 0, 8, 0, 0, 2, 4, 0, 0, 0, 9, 0, 5, 0, 0, 0, 9, 0, 0, 0, 2, 0, 0, 0, 1, 0, 2, 0, 0, 0, 4, 8, 0, 0, 4, 0, 0, 2, 0, 8, 9, 0, 6, 0, 0, 3, 0, 1, 7, 2, 1, 0, 2, 8, 0, 7, 6, 3, 0];
+       for(var i=0;i<toutLesInput.length;i++){
+        if(tableauDeValeur[i]==0){
+            toutLesInput[i].value="";
+            
+        }
+        else{
+            toutLesInput[i].value=tableauDeValeur[i];
+            toutLesInput[i].disabled="disabled";
+        }
+       }
+    
+    </script>
+    
+</body>
+</html>
